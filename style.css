@@ -1,0 +1,53 @@
+body {
+    font-family: Mochimatic, sans-serif;
+    color: #cccccc;
+    margin: 0;
+    padding: 0;
+    font-size: 50px;
+    background-color: #080720;
+    cursor: url(assets/mouse.png), auto;
+}
+
+@font-face {
+    font-family: Mochimatic;
+    src: url(assets/Mochimatic.ttf);
+}
+
+h1 {
+    color: #2c00cc;
+    text-align: center;
+    margin-top: -100px;
+    margin-bottom: 60px;
+    font-size: 200px;
+    opacity: 0;
+    transform: translateY(-100px);
+    transition: transform 1s ease, opacity 1s ease;
+}
+
+h3 {
+    color: #375af5;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 80px;
+}
+
+p {
+    color: #36a2e0;
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 15px 50px;
+    font-size: 70px;
+    color: #080720;
+    background-color: #36a2e0;
+    cursor: pointer;
+    transition: background-color 0.1s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #2c00cc;
+    transform: scale(1.1);
+}

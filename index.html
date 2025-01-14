@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vakhisite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="welcome">Welcome to</h3>
+    <h1 id="title">Vakhisite</h1>
+    <code>sudo rm -rf /</code>
+    <button id="navigate-btn">Execute</button>
+    <p>v1.1</p>
+
+    <script>
+        document.getElementById('navigate-btn').addEventListener('click', function() {
+            const title = document.getElementById('title');
+            const welcome = document.getElementById('welcome');
+            
+            title.style.opacity = '0';
+            welcome.style.opacity = '0';
+
+            setTimeout(() => {
+                window.location.href = 'subpage.html';
+            }, 500);
+        });
+
+        window.onload = function() {
+            const title = document.getElementById('title');
+            title.style.transform = 'translateY(0)';
+            title.style.opacity = '1';
+        };
+    </script>
+</body>
+</html>
