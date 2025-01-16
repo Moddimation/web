@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>Vakhisite</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3 id="welcome">Vakhisite</h3>
+
+    <button id="btn-snd-bg">Play BG Music</button>
+    <button id="btn-back">Back</button>
+
+    <audio id="snd-bg" loop><source src="assets/bg.mp3" type="audio/mp3"></source></audio>
+
+    <script src="main.js"></script>
+    <script>
+        btnPlaySnd("btn-snd-bg", "snd-bg");
+    </script>
+</body>
+</html>

@@ -3,34 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vakhisite</title>
+    <link rel="icon" type="image/png" href="assets/icon.png">
+    <title>Vakhisite v1.2</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h3 id="welcome">Welcome to</h3>
-    <h1 id="title">Vakhisite</h1>
-    <code>sudo rm -rf /</code>
-    <button id="navigate-btn">Execute</button>
-    <p>v1.1</p>
+    <h1>Vakhisite</h1>
 
+    <!--Knöpfe zum Verbinden mit anderer Seite-->
+    <button id="btn-testkey">Test Keyboard</button>
+    <button id="btn-testsnd">Test Sound</button>
+
+    <script src="main.js"></script>
     <script>
-        document.getElementById('navigate-btn').addEventListener('click', function() {
-            const title = document.getElementById('title');
-            const welcome = document.getElementById('welcome');
-            
-            title.style.opacity = '0';
-            welcome.style.opacity = '0';
-
-            setTimeout(() => {
-                window.location.href = 'subpage.html';
-            }, 500);
-        });
-
-        window.onload = function() {
-            const title = document.getElementById('title');
-            title.style.transform = 'translateY(0)';
-            title.style.opacity = '1';
-        };
+        btnSetPage("btn-testkey", "test-key"); //Keyboard Leitung
+        btnSetPage("btn-testsnd", "test-snd"); //Sound Leitung
     </script>
 </body>
 </html>
